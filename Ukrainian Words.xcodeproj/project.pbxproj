@@ -29,9 +29,32 @@
 		730B47E22E6118E1008FD851 /* Ukrainian WordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ukrainian WordsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		730B47F92E611923008FD851 /* Exceptions for "Ukrainian Words" folder in "Ukrainian WordsTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ukrainian_vocabulary.json,
+				Ukrainian_WordsApp.swift,
+			);
+			target = 730B47D72E6118E1008FD851 /* Ukrainian WordsTests */;
+		};
+		730B47FA2E611923008FD851 /* Exceptions for "Ukrainian Words" folder in "Ukrainian WordsUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ukrainian_vocabulary.json,
+				Ukrainian_WordsApp.swift,
+			);
+			target = 730B47E12E6118E1008FD851 /* Ukrainian WordsUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		730B47CD2E6118DF008FD851 /* Ukrainian Words */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				730B47F92E611923008FD851 /* Exceptions for "Ukrainian Words" folder in "Ukrainian WordsTests" target */,
+				730B47FA2E611923008FD851 /* Exceptions for "Ukrainian Words" folder in "Ukrainian WordsUITests" target */,
+			);
 			path = "Ukrainian Words";
 			sourceTree = "<group>";
 		};

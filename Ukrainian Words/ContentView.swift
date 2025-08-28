@@ -7,18 +7,5 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
-
-#Preview {
-    ContentView()
-}
+// This file is intentionally empty as the main ContentView is defined in Ukrainian_WordsApp.swift
+// The app uses the ContentView struct defined there with all the Ukrainian language learning functionality.

@@ -1,0 +1,2690 @@
+{
+  "nouns": [
+    {
+      "word": "стіл",
+      "meaning": "table",
+      "gender": "masculine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "телефон",
+      "meaning": "phone",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "стілець",
+      "meaning": "chair",
+      "gender": "masculine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "будинок",
+      "meaning": "house",
+      "gender": "masculine",
+      "categories": ["Places", "Home"]
+    },
+    {
+      "word": "хліб",
+      "meaning": "bread",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "чай",
+      "meaning": "tea",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "суп",
+      "meaning": "soup",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "ніж",
+      "meaning": "knife",
+      "gender": "masculine",
+      "categories": ["Objects", "Food"]
+    },
+    {
+      "word": "день",
+      "meaning": "day",
+      "gender": "masculine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "вечір",
+      "meaning": "evening",
+      "gender": "masculine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "ранок",
+      "meaning": "morning",
+      "gender": "masculine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "тиждень",
+      "meaning": "week",
+      "gender": "masculine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "місяць",
+      "meaning": "month",
+      "gender": "masculine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "рік",
+      "meaning": "year",
+      "gender": "masculine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "хлопець",
+      "meaning": "boy",
+      "gender": "masculine",
+      "categories": ["People", "Family"]
+    },
+    {
+      "word": "чоловік",
+      "meaning": "man",
+      "gender": "masculine",
+      "categories": ["People", "Family"]
+    },
+    {
+      "word": "брат",
+      "meaning": "brother",
+      "gender": "masculine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "дядько",
+      "meaning": "uncle",
+      "gender": "masculine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "друг",
+      "meaning": "friend (male)",
+      "gender": "masculine",
+      "categories": ["People"]
+    },
+    {
+      "word": "вчитель",
+      "meaning": "teacher (male)",
+      "gender": "masculine",
+      "categories": ["Professions", "School"]
+    },
+    {
+      "word": "лікар",
+      "meaning": "doctor",
+      "gender": "masculine",
+      "categories": ["Professions"]
+    },
+    {
+      "word": "поліцейський",
+      "meaning": "policeman",
+      "gender": "masculine",
+      "categories": ["Professions"]
+    },
+    {
+      "word": "магазин",
+      "meaning": "shop",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "ринок",
+      "meaning": "market",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "парк",
+      "meaning": "park",
+      "gender": "masculine",
+      "categories": ["Places", "Nature"]
+    },
+    {
+      "word": "поїзд",
+      "meaning": "train",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "автобус",
+      "meaning": "bus",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "літак",
+      "meaning": "airplane",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "комп'ютер",
+      "meaning": "computer",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "світ",
+      "meaning": "world",
+      "gender": "masculine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "день народження",
+      "meaning": "birthday",
+      "gender": "masculine",
+      "categories": ["Time", "Abstract"]
+    },
+    {
+      "word": "сон",
+      "meaning": "sleep",
+      "gender": "masculine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "урок",
+      "meaning": "lesson",
+      "gender": "masculine",
+      "categories": ["School"]
+    },
+    {
+      "word": "клас",
+      "meaning": "classroom",
+      "gender": "masculine",
+      "categories": ["School"]
+    },
+    {
+      "word": "спорт",
+      "meaning": "sport",
+      "gender": "masculine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "дощ",
+      "meaning": "rain",
+      "gender": "masculine",
+      "categories": ["Weather", "Nature"]
+    },
+    {
+      "word": "сніг",
+      "meaning": "snow",
+      "gender": "masculine",
+      "categories": ["Weather", "Nature"]
+    },
+    {
+      "word": "вітер",
+      "meaning": "wind",
+      "gender": "masculine",
+      "categories": ["Weather", "Nature"]
+    },
+    {
+      "word": "ліс",
+      "meaning": "forest",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "берег",
+      "meaning": "shore",
+      "gender": "masculine",
+      "categories": ["Nature", "Places"]
+    },
+    {
+      "word": "книга",
+      "meaning": "book",
+      "gender": "feminine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "ручка",
+      "meaning": "pen",
+      "gender": "feminine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "газета",
+      "meaning": "newspaper",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "ложка",
+      "meaning": "spoon",
+      "gender": "feminine",
+      "categories": ["Objects", "Food"]
+    },
+    {
+      "word": "тарілка",
+      "meaning": "plate",
+      "gender": "feminine",
+      "categories": ["Objects", "Food"]
+    },
+    {
+      "word": "чашка",
+      "meaning": "cup",
+      "gender": "feminine",
+      "categories": ["Objects", "Food"]
+    },
+    {
+      "word": "ніч",
+      "meaning": "night",
+      "gender": "feminine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "осінь",
+      "meaning": "autumn",
+      "gender": "feminine",
+      "categories": ["Time", "Weather"]
+    },
+    {
+      "word": "весна",
+      "meaning": "spring",
+      "gender": "feminine",
+      "categories": ["Time", "Weather"]
+    },
+    {
+      "word": "зима",
+      "meaning": "winter",
+      "gender": "feminine",
+      "categories": ["Time", "Weather"]
+    },
+    {
+      "word": "дівчина",
+      "meaning": "girl",
+      "gender": "feminine",
+      "categories": ["People", "Family"]
+    },
+    {
+      "word": "жінка",
+      "meaning": "woman",
+      "gender": "feminine",
+      "categories": ["People", "Family"]
+    },
+    {
+      "word": "сестра",
+      "meaning": "sister",
+      "gender": "feminine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "тітка",
+      "meaning": "aunt",
+      "gender": "feminine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "подруга",
+      "meaning": "friend (female)",
+      "gender": "feminine",
+      "categories": ["People"]
+    },
+    {
+      "word": "вчителька",
+      "meaning": "teacher (female)",
+      "gender": "feminine",
+      "categories": ["Professions", "School"]
+    },
+    {
+      "word": "мама",
+      "meaning": "mom",
+      "gender": "feminine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "донька",
+      "meaning": "daughter",
+      "gender": "feminine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "родина",
+      "meaning": "family",
+      "gender": "feminine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "вулиця",
+      "meaning": "street",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "площа",
+      "meaning": "square",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "кімната",
+      "meaning": "room",
+      "gender": "feminine",
+      "categories": ["Places", "Home"]
+    },
+    {
+      "word": "кухня",
+      "meaning": "kitchen",
+      "gender": "feminine",
+      "categories": ["Places", "Home"]
+    },
+    {
+      "word": "школа",
+      "meaning": "school",
+      "gender": "feminine",
+      "categories": ["School", "Places"]
+    },
+    {
+      "word": "бібліотека",
+      "meaning": "library",
+      "gender": "feminine",
+      "categories": ["School", "Places"]
+    },
+    {
+      "word": "лікарня",
+      "meaning": "hospital",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "країна",
+      "meaning": "country",
+      "gender": "feminine",
+      "categories": ["Places", "Abstract"]
+    },
+    {
+      "word": "музика",
+      "meaning": "music",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "мова",
+      "meaning": "language",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "історія",
+      "meaning": "history",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "робота",
+      "meaning": "job/work",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "пісня",
+      "meaning": "song",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "їжа",
+      "meaning": "food",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "вода",
+      "meaning": "water",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "любов",
+      "meaning": "love",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "вікно",
+      "meaning": "window",
+      "gender": "neuter",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "море",
+      "meaning": "sea",
+      "gender": "neuter",
+      "categories": ["Nature", "Places"]
+    },
+    {
+      "word": "місто",
+      "meaning": "city",
+      "gender": "neuter",
+      "categories": ["Places"]
+    },
+    {
+      "word": "село",
+      "meaning": "village",
+      "gender": "neuter",
+      "categories": ["Places"]
+    },
+    {
+      "word": "поле",
+      "meaning": "field",
+      "gender": "neuter",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "озеро",
+      "meaning": "lake",
+      "gender": "neuter",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "небо",
+      "meaning": "sky",
+      "gender": "neuter",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "сонце",
+      "meaning": "sun",
+      "gender": "neuter",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "слово",
+      "meaning": "word",
+      "gender": "neuter",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "ім'я",
+      "meaning": "name",
+      "gender": "neuter",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "яблуко",
+      "meaning": "apple",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "молоко",
+      "meaning": "milk",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "яйце",
+      "meaning": "egg",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "м'ясо",
+      "meaning": "meat",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "цукор",
+      "meaning": "sugar",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "кіно",
+      "meaning": "cinema",
+      "gender": "neuter",
+      "categories": ["Places"]
+    },
+    {
+      "word": "радіо",
+      "meaning": "radio",
+      "gender": "neuter",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "метро",
+      "meaning": "metro",
+      "gender": "neuter",
+      "categories": ["Transport", "Places"]
+    },
+    {
+      "word": "кафе",
+      "meaning": "café",
+      "gender": "neuter",
+      "categories": ["Places", "Food"]
+    },
+    {
+      "word": "завдання",
+      "meaning": "task",
+      "gender": "neuter",
+      "categories": ["School", "Abstract"]
+    },
+    {
+      "word": "питання",
+      "meaning": "question",
+      "gender": "neuter",
+      "categories": ["School", "Abstract"]
+    },
+    {
+      "word": "життя",
+      "meaning": "life",
+      "gender": "neuter",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "вік",
+      "meaning": "age",
+      "gender": "neuter",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "серце",
+      "meaning": "heart",
+      "gender": "neuter",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "обличчя",
+      "meaning": "face",
+      "gender": "neuter",
+      "categories": ["People"]
+    },
+    {
+      "word": "масло",
+      "meaning": "butter",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "сіль",
+      "meaning": "salt",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "сир",
+      "meaning": "cheese",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "риба",
+      "meaning": "fish",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "банан",
+      "meaning": "banana",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "апельсин",
+      "meaning": "orange",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "фрукт",
+      "meaning": "fruit",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "борщ",
+      "meaning": "borsch",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "лампа",
+      "meaning": "lamp",
+      "gender": "feminine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "ліжко",
+      "meaning": "bed",
+      "gender": "neuter",
+      "categories": ["Home"]
+    },
+    {
+      "word": "шафа",
+      "meaning": "closet",
+      "gender": "feminine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "дзеркало",
+      "meaning": "mirror",
+      "gender": "neuter",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "телевізор",
+      "meaning": "television",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "стіна",
+      "meaning": "wall",
+      "gender": "feminine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "підлога",
+      "meaning": "floor",
+      "gender": "feminine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "ключ",
+      "meaning": "key",
+      "gender": "masculine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "сумка",
+      "meaning": "bag",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "аптека",
+      "meaning": "pharmacy",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "театр",
+      "meaning": "theater",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "ресторан",
+      "meaning": "restaurant",
+      "gender": "masculine",
+      "categories": ["Places", "Food"]
+    },
+    {
+      "word": "вокзал",
+      "meaning": "station",
+      "gender": "masculine",
+      "categories": ["Places", "Transport"]
+    },
+    {
+      "word": "міст",
+      "meaning": "bridge",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "олівець",
+      "meaning": "pencil",
+      "gender": "masculine",
+      "categories": ["School"]
+    },
+    {
+      "word": "зошит",
+      "meaning": "notebook",
+      "gender": "masculine",
+      "categories": ["School"]
+    },
+    {
+      "word": "парта",
+      "meaning": "desk",
+      "gender": "feminine",
+      "categories": ["School"]
+    },
+    {
+      "word": "рюкзак",
+      "meaning": "backpack",
+      "gender": "masculine",
+      "categories": ["School", "Objects"]
+    },
+    {
+      "word": "година",
+      "meaning": "hour",
+      "gender": "feminine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "хвилина",
+      "meaning": "minute",
+      "gender": "feminine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "таксі",
+      "meaning": "taxi",
+      "gender": "neuter",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "велосипед",
+      "meaning": "bicycle",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "машина",
+      "meaning": "car",
+      "gender": "feminine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "квітка",
+      "meaning": "flower",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "річка",
+      "meaning": "river",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "гора",
+      "meaning": "mountain",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "трава",
+      "meaning": "grass",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "колір",
+      "meaning": "color",
+      "gender": "masculine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "тато",
+      "meaning": "dad",
+      "gender": "masculine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "бабуся",
+      "meaning": "grandmother",
+      "gender": "feminine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "дідусь",
+      "meaning": "grandfather",
+      "gender": "masculine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "дитина",
+      "meaning": "child",
+      "gender": "feminine",
+      "categories": ["People", "Family"]
+    },
+    {
+      "word": "хлопчик",
+      "meaning": "boy (young)",
+      "gender": "masculine",
+      "categories": ["People", "Family"]
+    },
+    {
+      "word": "дівчинка",
+      "meaning": "girl (young)",
+      "gender": "feminine",
+      "categories": ["People", "Family"]
+    },
+    {
+      "word": "перчик",
+      "meaning": "pepper",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "капуста",
+      "meaning": "cabbage",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "морква",
+      "meaning": "carrot",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "картопля",
+      "meaning": "potato",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "цибуля",
+      "meaning": "onion",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "часник",
+      "meaning": "garlic",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "огірок",
+      "meaning": "cucumber",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "помідор",
+      "meaning": "tomato",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "виноград",
+      "meaning": "grape",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "груша",
+      "meaning": "pear",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "персик",
+      "meaning": "peach",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "полуниця",
+      "meaning": "strawberry",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "лимон",
+      "meaning": "lemon",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "торт",
+      "meaning": "cake",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "печиво",
+      "meaning": "cookie",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "каша",
+      "meaning": "porridge",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "сік",
+      "meaning": "juice",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "кава",
+      "meaning": "coffee",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "вилка",
+      "meaning": "fork",
+      "gender": "feminine",
+      "categories": ["Objects", "Food"]
+    },
+    {
+      "word": "каструля",
+      "meaning": "pot",
+      "gender": "feminine",
+      "categories": ["Objects", "Home", "Food"]
+    },
+    {
+      "word": "сковорода",
+      "meaning": "pan",
+      "gender": "feminine",
+      "categories": ["Objects", "Home", "Food"]
+    },
+    {
+      "word": "чайник",
+      "meaning": "kettle",
+      "gender": "masculine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "праска",
+      "meaning": "iron",
+      "gender": "feminine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "холодильник",
+      "meaning": "fridge",
+      "gender": "masculine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "плита",
+      "meaning": "stove",
+      "gender": "feminine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "килим",
+      "meaning": "carpet",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "двері",
+      "meaning": "door",
+      "gender": "plural",
+      "categories": ["Home"]
+    },
+    {
+      "word": "ваза",
+      "meaning": "vase",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "картина",
+      "meaning": "picture",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "ковдра",
+      "meaning": "blanket",
+      "gender": "feminine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "подушка",
+      "meaning": "pillow",
+      "gender": "feminine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "рушник",
+      "meaning": "towel",
+      "gender": "masculine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "мило",
+      "meaning": "soap",
+      "gender": "neuter",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "щітка",
+      "meaning": "brush",
+      "gender": "feminine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "виделка",
+      "meaning": "fork",
+      "gender": "feminine",
+      "categories": ["Objects", "Food"]
+    },
+    {
+      "word": "банк",
+      "meaning": "bank",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "пошта",
+      "meaning": "post office",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "готель",
+      "meaning": "hotel",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "пляж",
+      "meaning": "beach",
+      "gender": "masculine",
+      "categories": ["Places", "Nature"]
+    },
+    {
+      "word": "музей",
+      "meaning": "museum",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "супермаркет",
+      "meaning": "supermarket",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "аеропорт",
+      "meaning": "airport",
+      "gender": "masculine",
+      "categories": ["Places", "Transport"]
+    },
+    {
+      "word": "учень",
+      "meaning": "pupil",
+      "gender": "masculine",
+      "categories": ["School", "People"]
+    },
+    {
+      "word": "учениця",
+      "meaning": "pupil (female)",
+      "gender": "feminine",
+      "categories": ["School", "People"]
+    },
+    {
+      "word": "підручник",
+      "meaning": "textbook",
+      "gender": "masculine",
+      "categories": ["School"]
+    },
+    {
+      "word": "дошка",
+      "meaning": "board",
+      "gender": "feminine",
+      "categories": ["School"]
+    },
+    {
+      "word": "крейда",
+      "meaning": "chalk",
+      "gender": "feminine",
+      "categories": ["School"]
+    },
+    {
+      "word": "перерва",
+      "meaning": "break",
+      "gender": "feminine",
+      "categories": ["School", "Time"]
+    },
+    {
+      "word": "карта",
+      "meaning": "map",
+      "gender": "feminine",
+      "categories": ["School", "Places"]
+    },
+    {
+      "word": "човен",
+      "meaning": "boat",
+      "gender": "masculine",
+      "categories": ["Transport", "Nature"]
+    },
+    {
+      "word": "корабель",
+      "meaning": "ship",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "трамвай",
+      "meaning": "tram",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "тролейбус",
+      "meaning": "trolleybus",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "дорога",
+      "meaning": "road",
+      "gender": "feminine",
+      "categories": ["Transport", "Places"]
+    },
+    {
+      "word": "квиток",
+      "meaning": "ticket",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "дерево",
+      "meaning": "tree",
+      "gender": "neuter",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "лист",
+      "meaning": "leaf",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "камінь",
+      "meaning": "stone",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "пісок",
+      "meaning": "sand",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "зірка",
+      "meaning": "star",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "тварина",
+      "meaning": "animal",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "птах",
+      "meaning": "bird",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "кіт",
+      "meaning": "cat",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "собака",
+      "meaning": "dog",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "хмара",
+      "meaning": "cloud",
+      "gender": "feminine",
+      "categories": ["Weather", "Nature"]
+    },
+    {
+      "word": "туман",
+      "meaning": "fog",
+      "gender": "masculine",
+      "categories": ["Weather"]
+    },
+    {
+      "word": "грім",
+      "meaning": "thunder",
+      "gender": "masculine",
+      "categories": ["Weather"]
+    },
+    {
+      "word": "блискавка",
+      "meaning": "lightning",
+      "gender": "feminine",
+      "categories": ["Weather"]
+    },
+    {
+      "word": "погода",
+      "meaning": "weather",
+      "gender": "feminine",
+      "categories": ["Weather", "Abstract"]
+    },
+    {
+      "word": "час",
+      "meaning": "time",
+      "gender": "masculine",
+      "categories": ["Time", "Abstract"]
+    },
+    {
+      "word": "секунда",
+      "meaning": "second",
+      "gender": "feminine",
+      "categories": ["Time"]
+    },
+    {
+      "word": "календар",
+      "meaning": "calendar",
+      "gender": "masculine",
+      "categories": ["Time", "Objects"]
+    },
+    {
+      "word": "дата",
+      "meaning": "date",
+      "gender": "feminine",
+      "categories": ["Time", "Abstract"]
+    },
+    {
+      "word": "людина",
+      "meaning": "person",
+      "gender": "feminine",
+      "categories": ["People"]
+    },
+    {
+      "word": "син",
+      "meaning": "son",
+      "gender": "masculine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "батько",
+      "meaning": "father",
+      "gender": "masculine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "племінник",
+      "meaning": "nephew",
+      "gender": "masculine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "племінниця",
+      "meaning": "niece",
+      "gender": "feminine",
+      "categories": ["Family"]
+    },
+    {
+      "word": "сусід",
+      "meaning": "neighbor",
+      "gender": "masculine",
+      "categories": ["People", "Home"]
+    },
+    {
+      "word": "сусідка",
+      "meaning": "neighbor (female)",
+      "gender": "feminine",
+      "categories": ["People", "Home"]
+    },
+    {
+      "word": "правда",
+      "meaning": "truth",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "радість",
+      "meaning": "joy",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "мир",
+      "meaning": "peace",
+      "gender": "masculine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "ідея",
+      "meaning": "idea",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "помилка",
+      "meaning": "mistake",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "рис",
+      "meaning": "rice",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "макарони",
+      "meaning": "pasta",
+      "gender": "plural",
+      "categories": ["Food"]
+    },
+    {
+      "word": "курка",
+      "meaning": "chicken",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "олія",
+      "meaning": "oil",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "йогурт",
+      "meaning": "yogurt",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "вершки",
+      "meaning": "cream",
+      "gender": "plural",
+      "categories": ["Food"]
+    },
+    {
+      "word": "ковбаса",
+      "meaning": "sausage",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "гриб",
+      "meaning": "mushroom",
+      "gender": "masculine",
+      "categories": ["Food", "Nature"]
+    },
+    {
+      "word": "цукерка",
+      "meaning": "candy",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "мед",
+      "meaning": "honey",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "варення",
+      "meaning": "jam",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "томатний сік",
+      "meaning": "tomato juice",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "годинник",
+      "meaning": "clock/watch",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "окуляри",
+      "meaning": "glasses",
+      "gender": "plural",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "парасолька",
+      "meaning": "umbrella",
+      "gender": "feminine",
+      "categories": ["Objects", "Weather"]
+    },
+    {
+      "word": "гаманець",
+      "meaning": "wallet",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "ноутбук",
+      "meaning": "laptop",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "мішок",
+      "meaning": "sack",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "папір",
+      "meaning": "paper",
+      "gender": "masculine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "ножиці",
+      "meaning": "scissors",
+      "gender": "plural",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "клей",
+      "meaning": "glue",
+      "gender": "masculine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "радiо",
+      "meaning": "radio",
+      "gender": "neuter",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "квитанція",
+      "meaning": "receipt",
+      "gender": "feminine",
+      "categories": ["Objects", "Places"]
+    },
+    {
+      "word": "туалет",
+      "meaning": "toilet",
+      "gender": "masculine",
+      "categories": ["Places", "Home"]
+    },
+    {
+      "word": "ванна",
+      "meaning": "bath",
+      "gender": "feminine",
+      "categories": ["Home", "Places"]
+    },
+    {
+      "word": "балкон",
+      "meaning": "balcony",
+      "gender": "masculine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "сад",
+      "meaning": "garden",
+      "gender": "masculine",
+      "categories": ["Home", "Nature"]
+    },
+    {
+      "word": "під'їзд",
+      "meaning": "entrance (building)",
+      "gender": "masculine",
+      "categories": ["Home", "Places"]
+    },
+    {
+      "word": "пошта (лист)",
+      "meaning": "mail (letter)",
+      "gender": "feminine",
+      "categories": ["Objects", "Places"]
+    },
+    {
+      "word": "лифт",
+      "meaning": "elevator",
+      "gender": "masculine",
+      "categories": ["Home", "Places"]
+    },
+    {
+      "word": "каса",
+      "meaning": "cash desk",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "ринок (базар)",
+      "meaning": "market (bazaar)",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "перукарня",
+      "meaning": "hair salon",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "салон",
+      "meaning": "salon",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "зупинка",
+      "meaning": "stop (bus/tram)",
+      "gender": "feminine",
+      "categories": ["Transport", "Places"]
+    },
+    {
+      "word": "пункт",
+      "meaning": "point/location",
+      "gender": "masculine",
+      "categories": ["Places", "Abstract"]
+    },
+    {
+      "word": "квиток на поїзд",
+      "meaning": "train ticket",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "пасажир",
+      "meaning": "passenger",
+      "gender": "masculine",
+      "categories": ["Transport", "People"]
+    },
+    {
+      "word": "водій",
+      "meaning": "driver",
+      "gender": "masculine",
+      "categories": ["Transport", "Professions"]
+    },
+    {
+      "word": "багаж",
+      "meaning": "luggage",
+      "gender": "masculine",
+      "categories": ["Transport", "Objects"]
+    },
+    {
+      "word": "мавпа",
+      "meaning": "monkey",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "корова",
+      "meaning": "cow",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "кінь",
+      "meaning": "horse",
+      "gender": "masculine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "вівця",
+      "meaning": "sheep",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "свиня",
+      "meaning": "pig",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "курка (птах)",
+      "meaning": "chicken (bird)",
+      "gender": "feminine",
+      "categories": ["Nature"]
+    },
+    {
+      "word": "місяць (небо)",
+      "meaning": "moon",
+      "gender": "masculine",
+      "categories": ["Nature", "Time"]
+    },
+    {
+      "word": "пил",
+      "meaning": "dust",
+      "gender": "masculine",
+      "categories": ["Nature", "Home"]
+    },
+    {
+      "word": "прохолода",
+      "meaning": "coolness",
+      "gender": "feminine",
+      "categories": ["Weather", "Abstract"]
+    },
+    {
+      "word": "мороз",
+      "meaning": "frost",
+      "gender": "masculine",
+      "categories": ["Weather"]
+    },
+    {
+      "word": "тепло",
+      "meaning": "warmth",
+      "gender": "neuter",
+      "categories": ["Weather", "Abstract"]
+    },
+    {
+      "word": "прохання",
+      "meaning": "request",
+      "gender": "neuter",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "думка",
+      "meaning": "thought/opinion",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "радa",
+      "meaning": "advice",
+      "gender": "feminine",
+      "categories": ["Abstract"]
+    },
+    {
+      "word": "іменник",
+      "meaning": "noun",
+      "gender": "masculine",
+      "categories": ["School", "Abstract"]
+    },
+    {
+      "word": "дієслово",
+      "meaning": "verb",
+      "gender": "neuter",
+      "categories": ["School", "Abstract"]
+    },
+    {
+      "word": "прикметник",
+      "meaning": "adjective",
+      "gender": "masculine",
+      "categories": ["School", "Abstract"]
+    },
+    {
+      "word": "вчительська",
+      "meaning": "teachers' room",
+      "gender": "feminine",
+      "categories": ["School", "Places"]
+    },
+    {
+      "word": "директор",
+      "meaning": "principal",
+      "gender": "masculine",
+      "categories": ["School", "Professions"]
+    },
+    {
+      "word": "медсестра",
+      "meaning": "nurse",
+      "gender": "feminine",
+      "categories": ["Professions"]
+    },
+    {
+      "word": "продавець",
+      "meaning": "shop assistant",
+      "gender": "masculine",
+      "categories": ["Professions", "Places"]
+    },
+    {
+      "word": "касира",
+      "meaning": "cashier (female)",
+      "gender": "feminine",
+      "categories": ["Professions", "Places"]
+    },
+    {
+      "word": "офіціант",
+      "meaning": "waiter",
+      "gender": "masculine",
+      "categories": ["Professions", "Places", "Food"]
+    },
+    {
+      "word": "офіціантка",
+      "meaning": "waitress",
+      "gender": "feminine",
+      "categories": ["Professions", "Places", "Food"]
+    },
+    {
+      "word": "сік апельсиновий",
+      "meaning": "orange juice",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "вівсянка",
+      "meaning": "oatmeal",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "бутерброд",
+      "meaning": "sandwich",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "какао",
+      "meaning": "cocoa",
+      "gender": "neuter",
+      "categories": ["Food"]
+    },
+    {
+      "word": "мінеральна вода",
+      "meaning": "mineral water",
+      "gender": "feminine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "чай чорний",
+      "meaning": "black tea",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "чай зелений",
+      "meaning": "green tea",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "перець",
+      "meaning": "pepper",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "хліб білий",
+      "meaning": "white bread",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "хліб чорний",
+      "meaning": "brown bread",
+      "gender": "masculine",
+      "categories": ["Food"]
+    },
+    {
+      "word": "мило рідке",
+      "meaning": "liquid soap",
+      "gender": "neuter",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "шампунь",
+      "meaning": "shampoo",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "зубна щітка",
+      "meaning": "toothbrush",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "зубна паста",
+      "meaning": "toothpaste",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "туалетний папір",
+      "meaning": "toilet paper",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "миючий засіб",
+      "meaning": "detergent",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "робот пилосос",
+      "meaning": "robot vacuum",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "пилосос",
+      "meaning": "vacuum cleaner",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "пральна машина",
+      "meaning": "washing machine",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "мікрохвильовка",
+      "meaning": "microwave",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "мікрохвильова піч",
+      "meaning": "microwave oven",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "комірчина",
+      "meaning": "closet/small storage",
+      "gender": "feminine",
+      "categories": ["Home", "Places"]
+    },
+    {
+      "word": "підлога (кімната)",
+      "meaning": "floor (room)",
+      "gender": "feminine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "стеля",
+      "meaning": "ceiling",
+      "gender": "feminine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "полиця",
+      "meaning": "shelf",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "носки",
+      "meaning": "socks",
+      "gender": "plural",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "сорочка",
+      "meaning": "shirt",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "штани",
+      "meaning": "trousers",
+      "gender": "plural",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "спідниця",
+      "meaning": "skirt",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "сукня",
+      "meaning": "dress",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "куртка",
+      "meaning": "jacket",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "черевики",
+      "meaning": "shoes",
+      "gender": "plural",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "кросівки",
+      "meaning": "sneakers",
+      "gender": "plural",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "чоботи",
+      "meaning": "boots",
+      "gender": "plural",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "шапка",
+      "meaning": "hat",
+      "gender": "feminine",
+      "categories": ["Objects", "Weather"]
+    },
+    {
+      "word": "рукавички",
+      "meaning": "gloves",
+      "gender": "plural",
+      "categories": ["Objects", "Weather"]
+    },
+    {
+      "word": "шарф",
+      "meaning": "scarf",
+      "gender": "masculine",
+      "categories": ["Objects", "Weather"]
+    },
+    {
+      "word": "світшот",
+      "meaning": "sweatshirt",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "сорочка (шкільна)",
+      "meaning": "shirt (school)",
+      "gender": "feminine",
+      "categories": ["School", "Objects"]
+    },
+    {
+      "word": "форма",
+      "meaning": "uniform",
+      "gender": "feminine",
+      "categories": ["School", "Objects"]
+    },
+    {
+      "word": "щоденник",
+      "meaning": "school diary",
+      "gender": "masculine",
+      "categories": ["School", "Objects"]
+    },
+    {
+      "word": "канцелярія",
+      "meaning": "stationery",
+      "gender": "feminine",
+      "categories": ["School", "Objects"]
+    },
+    {
+      "word": "перо",
+      "meaning": "pen (ink)",
+      "gender": "neuter",
+      "categories": ["School", "Objects"]
+    },
+    {
+      "word": "губка",
+      "meaning": "sponge",
+      "gender": "feminine",
+      "categories": ["School", "Home", "Objects"]
+    },
+    {
+      "word": "спека",
+      "meaning": "heat (weather)",
+      "gender": "feminine",
+      "categories": ["Weather"]
+    },
+    {
+      "word": "жара",
+      "meaning": "heat (colloq)",
+      "gender": "feminine",
+      "categories": ["Weather"]
+    },
+    {
+      "word": "прохолода (погода)",
+      "meaning": "cool weather",
+      "gender": "feminine",
+      "categories": ["Weather"]
+    },
+    {
+      "word": "освітлення",
+      "meaning": "lighting",
+      "gender": "neuter",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "лампочка",
+      "meaning": "light bulb",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "вентилятор",
+      "meaning": "fan",
+      "gender": "masculine",
+      "categories": ["Home", "Objects", "Weather"]
+    },
+    {
+      "word": "кондиціонер",
+      "meaning": "air conditioner",
+      "gender": "masculine",
+      "categories": ["Home", "Objects", "Weather"]
+    },
+    {
+      "word": "квиток на автобус",
+      "meaning": "bus ticket",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "записка",
+      "meaning": "note",
+      "gender": "feminine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "лист (пошта)",
+      "meaning": "letter (mail)",
+      "gender": "masculine",
+      "categories": ["Objects", "Places"]
+    },
+    {
+      "word": "конверт",
+      "meaning": "envelope",
+      "gender": "masculine",
+      "categories": ["Objects", "Places"]
+    },
+    {
+      "word": "запальничка",
+      "meaning": "lighter",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "сірники",
+      "meaning": "matches",
+      "gender": "plural",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "ключі",
+      "meaning": "keys",
+      "gender": "plural",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "замок",
+      "meaning": "lock",
+      "gender": "masculine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "ручник",
+      "meaning": "hand towel",
+      "gender": "masculine",
+      "categories": ["Home"]
+    },
+    {
+      "word": "носовичок",
+      "meaning": "handkerchief",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "папка",
+      "meaning": "folder",
+      "gender": "feminine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "степлер",
+      "meaning": "stapler",
+      "gender": "masculine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "скріпка",
+      "meaning": "paper clip",
+      "gender": "feminine",
+      "categories": ["Objects", "School"]
+    },
+    {
+      "word": "принтер",
+      "meaning": "printer",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "миша",
+      "meaning": "mouse",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "клавіатура",
+      "meaning": "keyboard",
+      "gender": "feminine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "екран",
+      "meaning": "screen",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "монітор",
+      "meaning": "monitor",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "пошта (електронна)",
+      "meaning": "email",
+      "gender": "feminine",
+      "categories": ["Objects", "Abstract"]
+    },
+    {
+      "word": "квиток на літак",
+      "meaning": "plane ticket",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "каска",
+      "meaning": "helmet",
+      "gender": "feminine",
+      "categories": ["Objects", "Transport"]
+    },
+    {
+      "word": "ремінь",
+      "meaning": "belt",
+      "gender": "masculine",
+      "categories": ["Objects"]
+    },
+    {
+      "word": "годинник настінний",
+      "meaning": "wall clock",
+      "gender": "masculine",
+      "categories": ["Objects", "Home"]
+    },
+    {
+      "word": "дзвінок",
+      "meaning": "doorbell/bell",
+      "gender": "masculine",
+      "categories": ["Objects", "Home", "School"]
+    },
+    {
+      "word": "стілець дитячий",
+      "meaning": "child chair",
+      "gender": "masculine",
+      "categories": ["Home", "School", "Objects"]
+    },
+    {
+      "word": "візок",
+      "meaning": "cart/stroller",
+      "gender": "masculine",
+      "categories": ["Objects", "Transport"]
+    },
+    {
+      "word": "майданчик",
+      "meaning": "playground",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "дитсадок",
+      "meaning": "kindergarten",
+      "gender": "masculine",
+      "categories": ["Places", "School"]
+    },
+    {
+      "word": "університет",
+      "meaning": "university",
+      "gender": "masculine",
+      "categories": ["Places", "School"]
+    },
+    {
+      "word": "кафедра",
+      "meaning": "department",
+      "gender": "feminine",
+      "categories": ["School", "Places"]
+    },
+    {
+      "word": "аудиторія",
+      "meaning": "auditorium/classroom",
+      "gender": "feminine",
+      "categories": ["School", "Places"]
+    },
+    {
+      "word": "таз",
+      "meaning": "basin",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "відро",
+      "meaning": "bucket",
+      "gender": "neuter",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "совок",
+      "meaning": "dustpan",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "швабра",
+      "meaning": "mop",
+      "gender": "feminine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "віник",
+      "meaning": "broom",
+      "gender": "masculine",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "вікна",
+      "meaning": "windows",
+      "gender": "plural",
+      "categories": ["Home", "Objects"]
+    },
+    {
+      "word": "стіни",
+      "meaning": "walls",
+      "gender": "plural",
+      "categories": ["Home"]
+    },
+    {
+      "word": "даша (двір)",
+      "meaning": "yard",
+      "gender": "feminine",
+      "categories": ["Home", "Places", "Nature"]
+    },
+    {
+      "word": "двір",
+      "meaning": "yard/courtyard",
+      "gender": "masculine",
+      "categories": ["Home", "Places"]
+    },
+    {
+      "word": "садок",
+      "meaning": "orchard",
+      "gender": "masculine",
+      "categories": ["Home", "Nature"]
+    },
+    {
+      "word": "парк дитячий",
+      "meaning": "kids' park",
+      "gender": "masculine",
+      "categories": ["Places", "Nature"]
+    },
+    {
+      "word": "вулиця головна",
+      "meaning": "main street",
+      "gender": "feminine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "провулок",
+      "meaning": "lane",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "перехрестя",
+      "meaning": "intersection",
+      "gender": "neuter",
+      "categories": ["Places", "Transport"]
+    },
+    {
+      "word": "світлофор",
+      "meaning": "traffic light",
+      "gender": "masculine",
+      "categories": ["Transport", "Objects"]
+    },
+    {
+      "word": "переїзд",
+      "meaning": "crossing",
+      "gender": "masculine",
+      "categories": ["Transport", "Places"]
+    },
+    {
+      "word": "доріжка",
+      "meaning": "path",
+      "gender": "feminine",
+      "categories": ["Places", "Nature"]
+    },
+    {
+      "word": "узбіччя",
+      "meaning": "roadside",
+      "gender": "neuter",
+      "categories": ["Places", "Transport"]
+    },
+    {
+      "word": "лавка",
+      "meaning": "bench",
+      "gender": "feminine",
+      "categories": ["Places", "Objects", "Home"]
+    },
+    {
+      "word": "фонтан",
+      "meaning": "fountain",
+      "gender": "masculine",
+      "categories": ["Places"]
+    },
+    {
+      "word": "пам'ятник",
+      "meaning": "monument",
+      "gender": "masculine",
+      "categories": ["Places", "Objects"]
+    },
+    {
+      "word": "квиток на трамвай",
+      "meaning": "tram ticket",
+      "gender": "masculine",
+      "categories": ["Transport"]
+    },
+    {
+      "word": "білет",
+      "meaning": "ticket (colloq)",
+      "gender": "masculine",
+      "categories": ["Transport", "Objects"]
+    },
+    {
+      "word": "кабінет",
+      "meaning": "office/room",
+      "gender": "masculine",
+      "categories": ["Places", "School"]
+    }
+  ],
+  "verbs": [
+    {
+      "word": "їсти",
+      "meaning": "to eat",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "пити",
+      "meaning": "to drink",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "йти",
+      "meaning": "to go (on foot)",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "ходити",
+      "meaning": "to walk",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "бігти",
+      "meaning": "to run",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "спати",
+      "meaning": "to sleep",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "читати",
+      "meaning": "to read",
+      "categories": ["Actions", "School"]
+    },
+    {
+      "word": "писати",
+      "meaning": "to write",
+      "categories": ["Actions", "School"]
+    },
+    {
+      "word": "говорити",
+      "meaning": "to speak",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "слухати",
+      "meaning": "to listen",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "дивитися",
+      "meaning": "to watch/look",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "жити",
+      "meaning": "to live",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "любити",
+      "meaning": "to love/like",
+      "categories": ["Actions", "Abstract"]
+    },
+    {
+      "word": "бачити",
+      "meaning": "to see",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "дати",
+      "meaning": "to give",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "взяти",
+      "meaning": "to take",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "відкривати",
+      "meaning": "to open",
+      "categories": ["Actions", "Home"]
+    },
+    {
+      "word": "закривати",
+      "meaning": "to close",
+      "categories": ["Actions", "Home"]
+    },
+    {
+      "word": "сидіти",
+      "meaning": "to sit",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "стояти",
+      "meaning": "to stand",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "сидіти",
+      "meaning": "to sit",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "відпочивати",
+      "meaning": "to rest",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "працювати",
+      "meaning": "to work",
+      "categories": ["Actions", "Professions"]
+    },
+    {
+      "word": "вчитися",
+      "meaning": "to study",
+      "categories": ["Actions", "School"]
+    },
+    {
+      "word": "допомагати",
+      "meaning": "to help",
+      "categories": ["Actions"]
+    },
+    {
+      "word": "потрібно",
+      "meaning": "to need (impersonal)",
+      "categories": ["Actions", "Abstract"]
+    },
+    {
+      "word": "можна",
+      "meaning": "may/can (impersonal)",
+      "categories": ["Actions", "Abstract"]
+    },
+    {
+      "word": "купувати",
+      "meaning": "to buy",
+      "categories": ["Actions", "Places", "Food"]
+    },
+    {
+      "word": "продавати",
+      "meaning": "to sell",
+      "categories": ["Actions", "Places"]
+    },
+    {
+      "word": "готувати",
+      "meaning": "to cook",
+      "categories": ["Actions", "Food", "Home"]
+    },
+    {
+      "word": "мити",
+      "meaning": "to wash",
+      "categories": ["Actions", "Home"]
+    },
+    {
+      "word": "чистити",
+      "meaning": "to clean",
+      "categories": ["Actions", "Home"]
+    },
+    {
+      "word": "платити",
+      "meaning": "to pay",
+      "categories": ["Actions", "Places"]
+    }
+  ],
+  "adjectives": [
+    {
+      "word": "великий",
+      "meaning": "big",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "маленький",
+      "meaning": "small",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "новий",
+      "meaning": "new",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "старий",
+      "meaning": "old",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "гарний",
+      "meaning": "nice/beautiful",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "добрий",
+      "meaning": "good",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "поганий",
+      "meaning": "bad",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "теплий",
+      "meaning": "warm",
+      "categories": ["Descriptions", "Weather"]
+    },
+    {
+      "word": "холодний",
+      "meaning": "cold",
+      "categories": ["Descriptions", "Weather"]
+    },
+    {
+      "word": "легкий",
+      "meaning": "easy/light",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "важкий",
+      "meaning": "heavy/hard",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "швидкий",
+      "meaning": "fast",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "повільний",
+      "meaning": "slow",
+      "categories": ["Descriptions"]
+    },
+    {
+      "word": "смачний",
+      "meaning": "tasty",
+      "categories": ["Descriptions", "Food"]
+    },
+    {
+      "word": "несмачний",
+      "meaning": "not tasty",
+      "categories": ["Descriptions", "Food"]
+    },
+    {
+      "word": "простий",
+      "meaning": "simple",
+      "categories": ["Descriptions", "Abstract"]
+    },
+    {
+      "word": "складний",
+      "meaning": "difficult",
+      "categories": ["Descriptions", "Abstract", "School"]
+    },
+    {
+      "word": "гарячий",
+      "meaning": "hot",
+      "categories": ["Descriptions", "Food", "Weather"]
+    },
+    {
+      "word": "свіжий",
+      "meaning": "fresh",
+      "categories": ["Descriptions", "Food", "Weather"]
+    },
+    {
+      "word": "чистий",
+      "meaning": "clean",
+      "categories": ["Descriptions", "Home"]
+    },
+    {
+      "word": "брудний",
+      "meaning": "dirty",
+      "categories": ["Descriptions", "Home"]
+    },
+    {
+      "word": "дешевий",
+      "meaning": "cheap",
+      "categories": ["Descriptions", "Places"]
+    },
+    {
+      "word": "дорогий",
+      "meaning": "expensive",
+      "categories": ["Descriptions", "Places"]
+    },
+    {
+      "word": "ранішній",
+      "meaning": "morning (adj)",
+      "categories": ["Descriptions", "Time"]
+    },
+    {
+      "word": "вечірній",
+      "meaning": "evening (adj)",
+      "categories": ["Descriptions", "Time"]
+    },
+    {
+      "word": "сонячний",
+      "meaning": "sunny",
+      "categories": ["Descriptions", "Weather"]
+    },
+    {
+      "word": "хмарний",
+      "meaning": "cloudy",
+      "categories": ["Descriptions", "Weather"]
+    }
+  ]
+}
