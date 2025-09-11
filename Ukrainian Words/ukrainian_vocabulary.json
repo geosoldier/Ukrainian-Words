@@ -537,7 +537,7 @@
     {
       "word": "цукор",
       "meaning": "sugar",
-      "gender": "neuter",
+      "gender": "masculine",
       "categories": ["Food"]
     },
     {
@@ -1489,7 +1489,7 @@
       "categories": ["Objects", "School"]
     },
     {
-      "word": "радiо",
+      "word": "радіо",
       "meaning": "radio",
       "gender": "neuter",
       "categories": ["Objects"]
@@ -2101,7 +2101,7 @@
       "categories": ["Objects", "Home"]
     },
     {
-      "word": "ручник",
+      "word": "рушник",
       "meaning": "hand towel",
       "gender": "masculine",
       "categories": ["Home"]
@@ -2482,11 +2482,6 @@
     {
       "word": "стояти",
       "meaning": "to stand",
-      "categories": ["Actions"]
-    },
-    {
-      "word": "сидіти",
-      "meaning": "to sit",
       "categories": ["Actions"]
     },
     {
