@@ -89,6 +89,9 @@ struct CardState: Equatable {
     var phase: QuizPhase = .meaning
     var scoreGrantedMeaning: Bool = false
     var scoreGrantedGender: Bool = false
+    // Retry tracking
+    var meaningAttempts: Int = 0
+    var genderAttempts: Int = 0
 }
 
 // MARK: - Settings
@@ -130,8 +133,8 @@ struct Haptics {
 }
 
 struct SoundFX {
-    static let correctID: SystemSoundID = 1110
-    static let wrongID: SystemSoundID = 1107
+    static let correctID: SystemSoundID = 1110  // Glass sound (positive)
+    static let wrongID: SystemSoundID = 1053    // Funk sound (more distinct negative)
     static func playCorrect(enabled: Bool) { guard enabled else { return }; AudioServicesPlaySystemSound(correctID) }
     static func playWrong(enabled: Bool)   { guard enabled else { return }; AudioServicesPlaySystemSound(wrongID) }
 }
@@ -172,6 +175,9 @@ final class QuizViewModel: ObservableObject {
     @Published var missedItems: [VocabItem] = []
     @Published var activeCategories: Set<String> = []
     @Published var showVisualFeedback: Bool = false
+    @Published var showIncorrectFeedback: Bool = false
+    @Published var showEncouragementCard: Bool = false
+    @Published var encouragementMessage: String = ""
 
     // Per-card saved state
     private var stateByID: [UUID: CardState] = [:]
@@ -329,27 +335,49 @@ final class QuizViewModel: ObservableObject {
         guard phase == .meaning, let cur = current else { return }
         updateState { st in
             st.selectedMeaning = choice
+            st.meaningAttempts += 1
             let isCorrect = (choice == cur.meaning)
             st.meaningWasCorrect = isCorrect
+            
             if isCorrect && !st.scoreGrantedMeaning {
+                // Correct answer - award points and proceed
                 score += 0.5
                 st.scoreGrantedMeaning = true
                 Haptics.success(enabled: settings.hapticsEnabled)
                 SoundFX.playCorrect(enabled: settings.answerSoundsEnabled)
                 triggerCorrectFeedback()
+                
+                // Move to next phase
+                if settings.partOfSpeech == .nouns {
+                    st.phase = .gender
+                } else {
+                    st.phase = .done
+                    totalAsked += 1
+                }
             } else if !isCorrect {
+                // Incorrect answer
                 Haptics.error(enabled: settings.hapticsEnabled)
                 SoundFX.playWrong(enabled: settings.answerSoundsEnabled)
-            }
-            // Only show gender step for nouns
-            if settings.partOfSpeech == .nouns {
-                st.phase = .gender
-            } else {
-                st.phase = .done
-                if st.meaningWasCorrect == false, let cur = current {
-                    if !missedItems.contains(where: { $0.id == cur.id }) { missedItems.append(cur) }
+                triggerIncorrectFeedback()
+                
+                if st.meaningAttempts >= 2 {
+                    // Second attempt failed - show encouragement card and move to next phase
+                    triggerEncouragementCard(correctAnswer: cur.meaning, questionType: "meaning")
+                    
+                    if settings.partOfSpeech == .nouns {
+                        st.phase = .gender
+                    } else {
+                        st.phase = .done
+                        if !missedItems.contains(where: { $0.id == cur.id }) {
+                            missedItems.append(cur)
+                        }
+                        totalAsked += 1
+                    }
+                } else {
+                    // First attempt failed - stay in meaning phase for retry
+                    // Clear selection to allow new choice
+                    st.selectedMeaning = nil
                 }
-                totalAsked += 1
             }
         }
         restoreStateToUI()
@@ -359,27 +387,49 @@ final class QuizViewModel: ObservableObject {
         guard phase == .gender, let cur = current else { return }
         updateState { st in
             st.selectedGender = choice
+            st.genderAttempts += 1
             let isCorrect = (choice == cur.gender)
             st.genderWasCorrect = isCorrect
+            
             if isCorrect && !st.scoreGrantedGender {
+                // Correct answer - award points and proceed
                 score += 0.5
                 st.scoreGrantedGender = true
                 Haptics.success(enabled: settings.hapticsEnabled)
                 SoundFX.playCorrect(enabled: settings.answerSoundsEnabled)
                 triggerCorrectFeedback()
+                
+                // Move to done phase
+                if st.phase != .done { totalAsked += 1 }
+                st.phase = .done
             } else if !isCorrect {
+                // Incorrect answer
                 Haptics.error(enabled: settings.hapticsEnabled)
                 SoundFX.playWrong(enabled: settings.answerSoundsEnabled)
+                triggerIncorrectFeedback()
+                
+                if st.genderAttempts >= 2 {
+                    // Second attempt failed - show encouragement card and move to done phase
+                    triggerEncouragementCard(correctAnswer: cur.gender.capitalized, questionType: "gender")
+                    
+                    if st.phase != .done { totalAsked += 1 }
+                    st.phase = .done
+                } else {
+                    // First attempt failed - stay in gender phase for retry
+                    // Clear selection to allow new choice
+                    st.selectedGender = nil
+                }
             }
-            if st.phase != .done { totalAsked += 1 }
-            st.phase = .done
-            // Record as missed if either meaning or gender was wrong
-            let wasMeaningCorrect = st.meaningWasCorrect ?? false
-            let wasGenderCorrect  = st.genderWasCorrect ?? false
-            if !(wasMeaningCorrect && wasGenderCorrect), let cur = current {
-                // avoid duplicates if somehow revisiting
-                if !missedItems.contains(where: { $0.id == cur.id }) {
-                    missedItems.append(cur)
+            
+            // Record as missed if we're done and either meaning or gender was wrong
+            if st.phase == .done {
+                let wasMeaningCorrect = st.meaningWasCorrect ?? false
+                let wasGenderCorrect = st.genderWasCorrect ?? false
+                if !(wasMeaningCorrect && wasGenderCorrect), let cur = current {
+                    // avoid duplicates if somehow revisiting
+                    if !missedItems.contains(where: { $0.id == cur.id }) {
+                        missedItems.append(cur)
+                    }
                 }
             }
         }
@@ -414,6 +464,12 @@ final class QuizViewModel: ObservableObject {
 
     var scoreText: String { String(format: "Score: %.1f / %d", score, totalAsked) }
     var counterText: String { workingDeck.isEmpty ? "" : "Word \(currentIndex + 1) of \(workingDeck.count)" }
+    
+    // Helper to get current card state for UI
+    var currentCardState: CardState? {
+        guard let id = current?.id else { return nil }
+        return stateByID[id]
+    }
 
     func resetScore() {
         score = 0; totalAsked = 0
@@ -438,6 +494,35 @@ final class QuizViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.showVisualFeedback = false
         }
+    }
+    
+    // Visual feedback for incorrect answers
+    func triggerIncorrectFeedback() {
+        showIncorrectFeedback = true
+        
+        // Auto-hide after 1.5 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.showIncorrectFeedback = false
+        }
+    }
+    
+    // Encouragement card for failed attempts with correct answer
+    func triggerEncouragementCard(correctAnswer: String, questionType: String) {
+        let messages = [
+            "Oh no! Good effort. The correct answer is: **\(correctAnswer)**. Keep at it. You can do this!",
+            "Don't worry! The correct answer is: **\(correctAnswer)**. You're learning - keep going!",
+            "Close! The correct answer is: **\(correctAnswer)**. Every mistake is a step forward!",
+            "No problem! The correct answer is: **\(correctAnswer)**. You've got this - keep practicing!"
+        ]
+        
+        encouragementMessage = messages.randomElement() ?? messages[0]
+        showEncouragementCard = true
+    }
+    
+    // Manual dismissal of encouragement card
+    func dismissEncouragementCard() {
+        showEncouragementCard = false
+        encouragementMessage = ""
     }
     
     // Save and load categories from UserDefaults
@@ -890,7 +975,7 @@ struct CategoryChip: View {
     }
 }
 
-// MARK: - Visual Feedback Overlay
+// MARK: - Visual Feedback Overlays
 struct CorrectAnswerOverlay: View {
     @Binding var isVisible: Bool
     
@@ -916,6 +1001,133 @@ struct CorrectAnswerOverlay: View {
                         .opacity(isVisible ? 1.0 : 0.0)
                         .animation(.easeInOut(duration: 0.3).delay(0.2), value: isVisible)
                 }
+            }
+            .transition(.opacity)
+            .animation(.easeInOut(duration: 0.3), value: isVisible)
+        }
+    }
+}
+
+struct IncorrectAnswerOverlay: View {
+    @Binding var isVisible: Bool
+    
+    var body: some View {
+        if isVisible {
+            ZStack {
+                // Semi-transparent background
+                Color.black.opacity(0.3)
+                    .ignoresSafeArea()
+                
+                // Large red X mark
+                VStack(spacing: 16) {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 120, weight: .bold))
+                        .foregroundColor(.red)
+                        .scaleEffect(isVisible ? 1.0 : 0.3)
+                        .animation(.spring(response: 0.6, dampingFraction: 0.8, blendDuration: 0), value: isVisible)
+                    
+                    Text("Incorrect!")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .opacity(isVisible ? 1.0 : 0.0)
+                        .animation(.easeInOut(duration: 0.3).delay(0.2), value: isVisible)
+                }
+            }
+            .transition(.opacity)
+            .animation(.easeInOut(duration: 0.3), value: isVisible)
+        }
+    }
+}
+
+struct EncouragementCardOverlay: View {
+    @Binding var isVisible: Bool
+    let message: String
+    let onContinue: () -> Void
+    
+    private func parseMessage() -> (beforeAnswer: String, answer: String, afterAnswer: String) {
+        // Parse message to extract the bold answer between **
+        let pattern = #"(.*?)\*\*(.*?)\*\*(.*)"#
+        if let regex = try? NSRegularExpression(pattern: pattern),
+           let match = regex.firstMatch(in: message, range: NSRange(message.startIndex..., in: message)) {
+            let beforeAnswer = String(message[Range(match.range(at: 1), in: message)!])
+            let answer = String(message[Range(match.range(at: 2), in: message)!])
+            let afterAnswer = String(message[Range(match.range(at: 3), in: message)!])
+            return (beforeAnswer, answer, afterAnswer)
+        }
+        return (message, "", "")
+    }
+    
+    var body: some View {
+        if isVisible {
+            ZStack {
+                // Semi-transparent background
+                Color.black.opacity(0.4)
+                    .ignoresSafeArea()
+                
+                // Encouragement card
+                VStack(spacing: 24) {
+                    // Supportive icon
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 60, weight: .bold))
+                        .foregroundColor(.orange)
+                        .scaleEffect(isVisible ? 1.0 : 0.3)
+                        .animation(.spring(response: 0.8, dampingFraction: 0.7, blendDuration: 0), value: isVisible)
+                    
+                    // Encouragement message with styled correct answer
+                    let parsedMessage = parseMessage()
+                    VStack(spacing: 4) {
+                        // Use Text concatenation for proper styling
+                        (Text(parsedMessage.beforeAnswer)
+                            .foregroundColor(.white) +
+                         Text(parsedMessage.answer)
+                            .foregroundColor(.green)
+                            .fontWeight(.bold) +
+                         Text(parsedMessage.afterAnswer)
+                            .foregroundColor(.white))
+                            .font(.title2)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 20)
+                    }
+                    .opacity(isVisible ? 1.0 : 0.0)
+                    .animation(.easeInOut(duration: 0.4).delay(0.3), value: isVisible)
+                    
+                    // Continue button
+                    Button {
+                        onContinue()
+                    } label: {
+                        Text("Continue")
+                            .font(.headline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .padding(.horizontal, 32)
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color.orange)
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(Color.orange.opacity(0.5), lineWidth: 1)
+                            )
+                    }
+                    .buttonStyle(.plain)
+                    .opacity(isVisible ? 1.0 : 0.0)
+                    .animation(.easeInOut(duration: 0.4).delay(0.6), value: isVisible)
+                }
+                .padding(30)
+                .background(
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.black.opacity(0.8))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.orange.opacity(0.3), lineWidth: 2)
+                        )
+                )
+                .scaleEffect(isVisible ? 1.0 : 0.8)
+                .animation(.spring(response: 0.6, dampingFraction: 0.8, blendDuration: 0), value: isVisible)
             }
             .transition(.opacity)
             .animation(.easeInOut(duration: 0.3), value: isVisible)
@@ -1030,7 +1242,9 @@ struct ContentView: View {
 
                 // Step 1: Meaning
                 if viewModel.phase == .meaning {
-                    Text("Select the meaning").font(.subheadline).foregroundColor(.secondary)
+                    let attempts = viewModel.currentCardState?.meaningAttempts ?? 0
+                    let promptText = attempts >= 1 ? "Try again - Select the meaning" : "Select the meaning"
+                    Text(promptText).font(.subheadline).foregroundColor(.secondary)
                     ForEach(viewModel.meaningOptions, id: \.self) { option in
                         Button { viewModel.submitMeaning(option) } label: {
                             Text(option)
@@ -1056,7 +1270,9 @@ struct ContentView: View {
                 // Step 2: Gender
                 if viewModel.phase == .gender {
                     if viewModel.settings.partOfSpeech == .nouns {
-                        Text("Select the gender").font(.subheadline).foregroundColor(.secondary)
+                        let attempts = viewModel.currentCardState?.genderAttempts ?? 0
+                        let promptText = attempts >= 1 ? "Try again - Select the gender" : "Select the gender"
+                        Text(promptText).font(.subheadline).foregroundColor(.secondary)
                     }
                     HStack(spacing: 12) {
                         ForEach(["masculine", "feminine", "neuter"], id: \.self) { g in
@@ -1150,6 +1366,16 @@ struct ContentView: View {
         }
         .overlay(
             CorrectAnswerOverlay(isVisible: $viewModel.showVisualFeedback)
+        )
+        .overlay(
+            IncorrectAnswerOverlay(isVisible: $viewModel.showIncorrectFeedback)
+        )
+        .overlay(
+            EncouragementCardOverlay(
+                isVisible: $viewModel.showEncouragementCard, 
+                message: viewModel.encouragementMessage,
+                onContinue: { viewModel.dismissEncouragementCard() }
+            )
         )
     }
 }

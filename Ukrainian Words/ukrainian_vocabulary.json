@@ -1011,7 +1011,7 @@
     {
       "word": "двері",
       "meaning": "door",
-      "gender": "plural",
+      "gender": "feminine",
       "categories": ["Home"]
     },
     {
@@ -1371,7 +1371,7 @@
     {
       "word": "макарони",
       "meaning": "pasta",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Food"]
     },
     {
@@ -1395,7 +1395,7 @@
     {
       "word": "вершки",
       "meaning": "cream",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Food"]
     },
     {
@@ -1443,7 +1443,7 @@
     {
       "word": "окуляри",
       "meaning": "glasses",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects"]
     },
     {
@@ -1479,7 +1479,7 @@
     {
       "word": "ножиці",
       "meaning": "scissors",
-      "gender": "plural",
+      "gender": "feminine",
       "categories": ["Objects", "School"]
     },
     {
@@ -1899,7 +1899,7 @@
     {
       "word": "носки",
       "meaning": "socks",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects", "Home"]
     },
     {
@@ -1911,7 +1911,7 @@
     {
       "word": "штани",
       "meaning": "trousers",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects"]
     },
     {
@@ -1935,19 +1935,19 @@
     {
       "word": "черевики",
       "meaning": "shoes",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects"]
     },
     {
       "word": "кросівки",
       "meaning": "sneakers",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects"]
     },
     {
       "word": "чоботи",
       "meaning": "boots",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects"]
     },
     {
@@ -1959,7 +1959,7 @@
     {
       "word": "рукавички",
       "meaning": "gloves",
-      "gender": "plural",
+      "gender": "feminine",
       "categories": ["Objects", "Weather"]
     },
     {
@@ -2085,13 +2085,13 @@
     {
       "word": "сірники",
       "meaning": "matches",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects"]
     },
     {
       "word": "ключі",
       "meaning": "keys",
-      "gender": "plural",
+      "gender": "masculine",
       "categories": ["Objects", "Home"]
     },
     {
@@ -2271,13 +2271,13 @@
     {
       "word": "вікна",
       "meaning": "windows",
-      "gender": "plural",
+      "gender": "neuter",
       "categories": ["Home", "Objects"]
     },
     {
       "word": "стіни",
       "meaning": "walls",
-      "gender": "plural",
+      "gender": "feminine",
       "categories": ["Home"]
     },
     {
