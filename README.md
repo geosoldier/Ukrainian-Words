@@ -4,7 +4,9 @@ An iOS app to help beginners learn Ukrainian vocabulary and practice identifying
 
 🎨 Minimalist UI with Ukrainian flag colors
 🔊 Text-to-Speech: tap the speaker icon to hear Ukrainian words
-✅ Green/Red feedback with sound (ding for correct, buzz for incorrect)
+✅ **Enhanced Visual Feedback**: Large animated green checkmark appears on correct answers
+🎵 Audio feedback with sound (ding for correct, buzz for incorrect)
+📳 Haptic feedback for tactile confirmation
 ↩️ Previous button (review up to 5 past words)
 📚 Built-in learning section explaining Ukrainian gender rules
 ⚙️ Settings screen with shuffle toggle, haptics, and usage instructions
@@ -29,19 +31,50 @@ Build & Run
 
 Clone the repo:
 
-git clone git@github.com:your-username/ukrainian-gender-quiz.git
-cd ukrainian-gender-quiz
-Open in XCODE: ''bash open Ukrainian.xcodeproj
+```bash
+git clone https://github.com/geosoldier/Ukrainian-Words.git
+cd "Ukrainian Words"
+open "Ukrainian Words.xcodeproj"
+```
 
 Connect your iphone and press the Run button in XCode.
 
-Roadmap
+## 📋 Version History
 
-📊 End-of-session summary (words missed, accuracy %)
+### Version 1.1.0 (October 2024)
+- ✅ **NEW: Enhanced Visual Feedback** - Large animated green checkmark with "Correct!" text appears on screen for correct answers
+- 🎬 **NEW: Spring Animations** - Smooth scale and fade animations for visual feedback
+- ⏱️ **NEW: Auto-hide Timer** - Visual feedback automatically disappears after 1.5 seconds
+- 🎯 **IMPROVED: Multi-sensory Experience** - Combined audio, haptic, and visual feedback for correct answers
+- 🔧 **TECHNICAL: SwiftUI Overlay System** - Non-blocking overlay system for visual feedback
+
+### Version 1.0.0 (App Store Release)
+- 🎨 Minimalist UI with Ukrainian flag colors
+- 🔊 Text-to-Speech pronunciation for Ukrainian words
+- 🎵 Audio feedback (ding/buzz sounds)
+- 📳 Haptic feedback support
+- ↩️ Previous button with 5-word history
+- 📚 Built-in Ukrainian gender learning guide
+- ⚙️ Comprehensive settings screen
+- 📈 Session score tracking
+- 🌍 Category-based word filtering
+- 📊 End-of-session summary with missed words
+- 🔄 Retry missed words functionality
+
+## 🗺️ Roadmap
+
+### Upcoming Features
 🎯 Streaks & daily goals
-🌙 Light/Dark mode with Ukrainian accent colors
-🌍 Categories (family, food, animals, travel)
-🔔 Notifications for daily practice
+🔔 Notifications for daily practice  
+📱 Apple Watch companion app
+🌐 Localization for multiple languages
+🎮 Gamification elements (achievements, badges)
+
+### Completed Features ✅
+- ✅ End-of-session summary (words missed, accuracy %) - *Implemented in v1.0.0*
+- ✅ Light/Dark mode with Ukrainian accent colors - *Implemented in v1.0.0*  
+- ✅ Categories (family, food, animals, travel, etc.) - *Implemented in v1.0.0*
+- ✅ Enhanced visual feedback - *Implemented in v1.1.0*
 License
 
 Currently closed-source for personal development and personal use. May switch to MIT or Apache 2.0 in the future.

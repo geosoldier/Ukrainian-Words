@@ -171,6 +171,7 @@ final class QuizViewModel: ObservableObject {
     @Published var showSummary: Bool = false
     @Published var missedItems: [VocabItem] = []
     @Published var activeCategories: Set<String> = []
+    @Published var showVisualFeedback: Bool = false
 
     // Per-card saved state
     private var stateByID: [UUID: CardState] = [:]
@@ -335,6 +336,7 @@ final class QuizViewModel: ObservableObject {
                 st.scoreGrantedMeaning = true
                 Haptics.success(enabled: settings.hapticsEnabled)
                 SoundFX.playCorrect(enabled: settings.answerSoundsEnabled)
+                triggerCorrectFeedback()
             } else if !isCorrect {
                 Haptics.error(enabled: settings.hapticsEnabled)
                 SoundFX.playWrong(enabled: settings.answerSoundsEnabled)
@@ -364,6 +366,7 @@ final class QuizViewModel: ObservableObject {
                 st.scoreGrantedGender = true
                 Haptics.success(enabled: settings.hapticsEnabled)
                 SoundFX.playCorrect(enabled: settings.answerSoundsEnabled)
+                triggerCorrectFeedback()
             } else if !isCorrect {
                 Haptics.error(enabled: settings.hapticsEnabled)
                 SoundFX.playWrong(enabled: settings.answerSoundsEnabled)
@@ -425,6 +428,16 @@ final class QuizViewModel: ObservableObject {
     func speakCurrentWord() {
         guard let w = current?.word else { return }
         SpeechManager.shared.speak(w, enabled: settings.speechEnabled, rate: settings.speechRate)
+    }
+    
+    // Visual feedback for correct answers
+    func triggerCorrectFeedback() {
+        showVisualFeedback = true
+        
+        // Auto-hide after 1.5 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.showVisualFeedback = false
+        }
     }
     
     // Save and load categories from UserDefaults
@@ -877,6 +890,39 @@ struct CategoryChip: View {
     }
 }
 
+// MARK: - Visual Feedback Overlay
+struct CorrectAnswerOverlay: View {
+    @Binding var isVisible: Bool
+    
+    var body: some View {
+        if isVisible {
+            ZStack {
+                // Semi-transparent background
+                Color.black.opacity(0.3)
+                    .ignoresSafeArea()
+                
+                // Large green checkmark
+                VStack(spacing: 16) {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.system(size: 120, weight: .bold))
+                        .foregroundColor(.green)
+                        .scaleEffect(isVisible ? 1.0 : 0.3)
+                        .animation(.spring(response: 0.6, dampingFraction: 0.8, blendDuration: 0), value: isVisible)
+                    
+                    Text("Correct!")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .opacity(isVisible ? 1.0 : 0.0)
+                        .animation(.easeInOut(duration: 0.3).delay(0.2), value: isVisible)
+                }
+            }
+            .transition(.opacity)
+            .animation(.easeInOut(duration: 0.3), value: isVisible)
+        }
+    }
+}
+
 // MARK: - Main Quiz UI
 struct ContentView: View {
     @ObservedObject var viewModel: QuizViewModel
@@ -1102,6 +1148,9 @@ struct ContentView: View {
             SessionSummaryView(vm: viewModel)
                 .presentationDetents([.large])
         }
+        .overlay(
+            CorrectAnswerOverlay(isVisible: $viewModel.showVisualFeedback)
+        )
     }
 }
 
